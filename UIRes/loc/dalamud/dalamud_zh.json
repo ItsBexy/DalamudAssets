@@ -17,7 +17,7 @@
   },
   "DalamudInstallerPluginChangelogHelp": {
     "message": "Open plugin changelogs",
-    "description": "<>c__DisplayClass64_0.<PrintUpdatedPlugins>b__0"
+    "description": "<>c__DisplayClass68_0.<PrintUpdatedPlugins>b__0"
   },
   "InstallerUpdateStatusPending": {
     "message": "Pending",
@@ -71,6 +71,78 @@
     "message": "New Collection",
     "description": "ProfileManager.AddNewProfile"
   },
+  "AutoUpdateOpenPluginInstaller": {
+    "message": "Open installer",
+    "description": "Locs.get_NotificationButtonOpenPluginInstaller"
+  },
+  "AutoUpdateUpdate": {
+    "message": "Update",
+    "description": "Locs.get_NotificationButtonUpdate"
+  },
+  "AutoUpdateUpdatesAvailable": {
+    "message": "Updates available!",
+    "description": "Locs.get_NotificationTitleUpdatesAvailable"
+  },
+  "AutoUpdateUpdatesSuccessful": {
+    "message": "Updates successful!",
+    "description": "Locs.get_NotificationTitleUpdatesSuccessful"
+  },
+  "AutoUpdateUpdatingPlugins": {
+    "message": "Updating plugins...",
+    "description": "Locs.get_NotificationTitleUpdatingPlugins"
+  },
+  "AutoUpdateUpdatesFailed": {
+    "message": "Updates failed!",
+    "description": "Locs.get_NotificationTitleUpdatesFailed"
+  },
+  "AutoUpdateUpdatesSuccessfulContent": {
+    "message": "All plugins have been updated successfully.",
+    "description": "Locs.get_NotificationContentUpdatesSuccessful"
+  },
+  "AutoUpdateUpdatesSuccessfulContentMinimized": {
+    "message": "Plugins updated successfully.",
+    "description": "Locs.get_NotificationContentUpdatesSuccessfulMinimized"
+  },
+  "AutoUpdateUpdatesFailedContent": {
+    "message": "Some plugins failed to update. Please check the plugin installer for more information.",
+    "description": "Locs.get_NotificationContentUpdatesFailed"
+  },
+  "AutoUpdateUpdatesFailedContentMinimized": {
+    "message": "Plugins failed to update.",
+    "description": "Locs.get_NotificationContentUpdatesFailedMinimized"
+  },
+  "AutoUpdateUpdatesAvailableContentPlural": {
+    "message": "There are {0} plugins that can be updated:",
+    "description": "Locs.NotificationContentUpdatesAvailable"
+  },
+  "AutoUpdateUpdatesAvailableContentSingular": {
+    "message": "There is a plugin that can be updated:",
+    "description": "Locs.NotificationContentUpdatesAvailable"
+  },
+  "AutoUpdateUpdatesAvailableContentMinimizedPlural": {
+    "message": "{0} plugin updates available",
+    "description": "Locs.NotificationContentUpdatesAvailableMinimized"
+  },
+  "AutoUpdateUpdatesAvailableContentMinimizedSingular": {
+    "message": "1 plugin update available",
+    "description": "Locs.NotificationContentUpdatesAvailableMinimized"
+  },
+  "AutoUpdatePreparingToUpdatePlural": {
+    "message": "Preparing to update {0} plugins...",
+    "description": "Locs.NotificationContentPreparingToUpdate"
+  },
+  "AutoUpdatePreparingToUpdateSingular": {
+    "message": "Preparing to update 1 plugin...",
+    "description": "Locs.NotificationContentPreparingToUpdate"
+  },
+  "AutoUpdateUpdating": {
+    "message": "Updating {0}...",
+    "description": "Locs.NotificationContentUpdating"
+  },
+  "AutoUpdateFailedPlugins": {
+    "message": "Failed plugin(s): {0}",
+    "description": "Locs.NotificationContentFailedPlugins"
+  },
   "WindowSystemContextActionPin": {
     "message": "Pin Window",
     "description": "Window.DrawInternal"
@@ -100,7 +172,7 @@
     "description": "Window.DrawInternal"
   },
   "DalamudUnloadHelp": {
-    "message": "卸载游戏中的 XIVLauncher 插件。",
+    "message": "Unloads XIVLauncher in-game addon. For debug use only!",
     "description": "DalamudCommands..ctor"
   },
   "DalamudCmdInfoHelp": {
@@ -136,7 +208,7 @@
     "description": "DalamudCommands..ctor"
   },
   "DalamudBranchSwitcher": {
-    "message": "Draw branch switcher",
+    "message": "Open the branch switcher",
     "description": "DalamudCommands..ctor"
   },
   "DalamudDevDataMenuHelp": {
@@ -144,7 +216,7 @@
     "description": "DalamudCommands..ctor"
   },
   "DalamudDevLogHelp": {
-    "message": "打开开发者日志 DEBUG",
+    "message": "Open the plugin log window/console",
     "description": "DalamudCommands..ctor"
   },
   "DalamudInstallerHelp": {
@@ -167,6 +239,10 @@
     "message": "Open Dalamud's startup timing profiler.",
     "description": "DalamudCommands..ctor"
   },
+  "DalamudCopyLogHelp": {
+    "message": "Copy the dalamud.log file to your clipboard.",
+    "description": "DalamudCommands..ctor"
+  },
   "DalamudCmdHelpAvailable": {
     "message": "可用命令:",
     "description": "DalamudCommands.OnHelpCommand"
@@ -175,12 +251,8 @@
     "message": "Command not found.",
     "description": "DalamudCommands.OnHelpCommand"
   },
-  "DalamudMuteNoArgs": {
-    "message": "请提供一个单词来屏蔽。",
-    "description": "DalamudCommands.OnBadWordsAddCommand"
-  },
-  "DalamudMuted": {
-    "message": "已屏蔽 \"{0}\"。",
+  "DalamudMuteListDeprecation": {
+    "message": "The built-in Dalamud bad word list is deprecated and no new words can be added. Please use a plugin for this functionality.",
     "description": "DalamudCommands.OnBadWordsAddCommand"
   },
   "DalamudNoneMuted": {
@@ -202,6 +274,14 @@
   "DalamudLanguageSetTo": {
     "message": "语言设置为 {0}",
     "description": "DalamudCommands.OnSetLanguageCommand"
+  },
+  "DalamudLogCopyFailure": {
+    "message": "Could not copy log file to clipboard.",
+    "description": "DalamudCommands.OnCopyLogCommand"
+  },
+  "DalamudLogCopySuccess": {
+    "message": "Log file copied to clipboard.",
+    "description": "DalamudCommands.OnCopyLogCommand"
   },
   "TSMDalamudPlugins": {
     "message": "插件安装器",
@@ -263,6 +343,10 @@
     "message": "Plugin Collections",
     "description": "Locs.get_Category_PluginProfiles"
   },
+  "InstallerCategoryCanBeUpdated": {
+    "message": "Can be updated",
+    "description": "Locs.get_Category_UpdateablePlugins"
+  },
   "InstallerCategoryOther": {
     "message": "其他",
     "description": "Locs.get_Category_Other"
@@ -302,6 +386,18 @@
   "InstallerCategoryDalamud": {
     "message": "Dalamud",
     "description": "Locs.get_Category_Dalamud"
+  },
+  "DalamudSettingsAutoUpdateHint": {
+    "message": "Dalamud can update your plugins automatically, making sure that you always have the newest features and bug fixes. You can choose when and how auto-updates are run here.",
+    "description": "ChangelogWindow.Draw"
+  },
+  "DalamudSettingsAutoUpdateDisclaimer1": {
+    "message": "You can always update your plugins manually by clicking the update button in the plugin list. You can also opt into updates for specific plugins by right-clicking them and selecting \"Always auto-update\".",
+    "description": "ChangelogWindow.Draw"
+  },
+  "DalamudSettingsAutoUpdateDisclaimer2": {
+    "message": "Dalamud will only notify you about updates while you are idle.",
+    "description": "ChangelogWindow.Draw"
   },
   "DalamudGamepadModeNotifierText": {
     "message": "当前处于手柄模式。按 L1+L3 以禁用，按 R3 打开插件菜单。",
@@ -455,6 +551,74 @@
     "message": "About",
     "description": "SettingsTabAbout.get_Title"
   },
+  "DalamudSettingsAutoUpdates": {
+    "message": "Auto-Updates",
+    "description": "SettingsTabAutoUpdates.get_Title"
+  },
+  "DalamudSettingsAutoUpdateBehavior": {
+    "message": "When the game starts...",
+    "description": "SettingsTabAutoUpdates.Draw"
+  },
+  "DalamudSettingsAutoUpdateNone": {
+    "message": "Do not check for updates automatically",
+    "description": "SettingsTabAutoUpdates.Draw"
+  },
+  "DalamudSettingsAutoUpdateNotify": {
+    "message": "Only notify me of new updates",
+    "description": "SettingsTabAutoUpdates.Draw"
+  },
+  "DalamudSettingsAutoUpdateMainRepo": {
+    "message": "Auto-update main repository plugins",
+    "description": "SettingsTabAutoUpdates.Draw"
+  },
+  "DalamudSettingsAutoUpdateAll": {
+    "message": "Auto-update all plugins",
+    "description": "SettingsTabAutoUpdates.Draw"
+  },
+  "DalamudSettingsAutoUpdateAllWarning": {
+    "message": "Warning: This will update all plugins, including those not from the main repository.\nThese updates are not reviewed by the Dalamud team and may contain malicious code.",
+    "description": "SettingsTabAutoUpdates.Draw"
+  },
+  "DalamudSettingsAutoUpdatePeriodically": {
+    "message": "Periodically check for new updates while playing",
+    "description": "SettingsTabAutoUpdates.Draw"
+  },
+  "DalamudSettingsAutoUpdatePeriodicallyHint": {
+    "message": "Plugins won't update automatically after startup, you will only receive a notification while you are not actively playing.",
+    "description": "SettingsTabAutoUpdates.Draw"
+  },
+  "DalamudSettingsAutoUpdateOptedIn": {
+    "message": "Per-plugin overrides",
+    "description": "SettingsTabAutoUpdates.Draw"
+  },
+  "DalamudSettingsAutoUpdateOverrideHint": {
+    "message": "Here, you can choose to receive or not to receive updates for specific plugins. This will override the settings above for the selected plugins.",
+    "description": "SettingsTabAutoUpdates.Draw"
+  },
+  "DalamudSettingsAutoUpdateOptedInHint2": {
+    "message": "You don't have auto-update rules for any plugins.",
+    "description": "SettingsTabAutoUpdates.Draw"
+  },
+  "DalamudSettingsAutoUpdateOptInUnknownPlugin": {
+    "message": "Unknown plugin",
+    "description": "SettingsTabAutoUpdates.Draw"
+  },
+  "DalamudSettingsAutoUpdateOptInRemove": {
+    "message": "Remove this override",
+    "description": "SettingsTabAutoUpdates.Draw"
+  },
+  "DalamudSettingsAutoUpdateOptInAdd": {
+    "message": "Add new override",
+    "description": "SettingsTabAutoUpdates.Draw"
+  },
+  "DalamudSettingsAutoUpdateOptInNeverUpdate": {
+    "message": "Never update this",
+    "description": "SettingsTabAutoUpdates.<Draw>g__OptKindToString|9_5"
+  },
+  "DalamudSettingsAutoUpdateOptInAlwaysUpdate": {
+    "message": "Always update this",
+    "description": "SettingsTabAutoUpdates.<Draw>g__OptKindToString|9_5"
+  },
   "DalamudSettingsServerInfoBar": {
     "message": "服务器信息栏",
     "description": "SettingsTabDtr.get_Title"
@@ -567,28 +731,12 @@
     "message": "在角色登入时显示已加载的插件。",
     "description": "SettingsTabGeneral..ctor"
   },
-  "DalamudSettingsAutoUpdatePlugins": {
-    "message": "自动更新插件",
-    "description": "SettingsTabGeneral..ctor"
-  },
-  "DalamudSettingsAutoUpdatePluginsMsgHint": {
-    "message": "在角色登入时自动更新插件。",
-    "description": "SettingsTabGeneral..ctor"
-  },
   "DalamudSettingsSystemMenu": {
     "message": "显示 Dalamud 快捷菜单",
     "description": "SettingsTabGeneral..ctor"
   },
   "DalamudSettingsSystemMenuMsgHint": {
     "message": "在系统菜单中显示 Dalamud 插件菜单及设置按钮。",
-    "description": "SettingsTabGeneral..ctor"
-  },
-  "DalamudSettingsEnableRmtFiltering": {
-    "message": "Enable RMT Filtering",
-    "description": "SettingsTabGeneral..ctor"
-  },
-  "DalamudSettingsEnableRmtFilteringMsgHint": {
-    "message": "Enable Dalamud's built-in RMT ad filtering.",
     "description": "SettingsTabGeneral..ctor"
   },
   "DalamudSettingDoMbCollect": {
@@ -739,6 +887,14 @@
     "message": "This will suppress certain animations from Dalamud, such as the notification popup.",
     "description": "SettingsTabLook..ctor"
   },
+  "DalamudSettingImeStateIndicatorOpacity": {
+    "message": "IME State Indicator Opacity (CJK only)",
+    "description": "SettingsTabLook..ctor"
+  },
+  "DalamudSettingImeStateIndicatorOpacityHint": {
+    "message": "When any of CJK IMEs is in use, the state of IME will be shown with the opacity specified here.",
+    "description": "SettingsTabLook..ctor"
+  },
   "ChangelogNoText": {
     "message": "No changelog for this version.",
     "description": "PluginChangelogEntry..ctor"
@@ -802,6 +958,22 @@
   "InstallerSafeMode": {
     "message": "安全模式已启用，重启以激活插件。",
     "description": "Locs.get_TabBody_SafeMode"
+  },
+  "InstallerNoPluginsTesting": {
+    "message": "You aren't testing any plugins at the moment!\nYou can opt in to testing versions in the plugin context menu.",
+    "description": "Locs.get_TabBody_NoPluginsTesting"
+  },
+  "InstallerNoPluginsInstalled": {
+    "message": "You don't have any plugins installed yet!\nYou can install them from the \"{0}\" tab.",
+    "description": "Locs.get_TabBody_NoPluginsInstalled"
+  },
+  "InstallerNoPluginsUpdate": {
+    "message": "No plugins have updates available at the moment.",
+    "description": "Locs.get_TabBody_NoPluginsUpdateable"
+  },
+  "InstallerNoPluginsDev": {
+    "message": "You don't have any dev plugins. Add them some the settings.",
+    "description": "Locs.get_TabBody_NoPluginsDev"
   },
   "InstallerNoMatching": {
     "message": "你寻找的插件不存在。",
@@ -1403,10 +1575,6 @@
     "message": "Back to overview",
     "description": "Locs.get_BackToOverview"
   },
-  "ProfileManagerSearchHint": {
-    "message": "Search...",
-    "description": "Locs.get_SearchHint"
-  },
   "ProfileManagerAddProfileHint": {
     "message": "No collections! Add one!",
     "description": "Locs.get_AddProfileHint"
@@ -1503,6 +1671,10 @@
     "message": "{0} (Not Installed)",
     "description": "Locs.NotInstalled"
   },
+  "ProfileManagerSearchHint": {
+    "message": "Search...",
+    "description": "Locs.get_SearchHint"
+  },
   "NotificationConstants.DefaultInitiator": {
     "message": "Dalamud",
     "description": "NotificationConstants.get_DefaultInitiator"
@@ -1542,26 +1714,6 @@
   "DalamudUpdated": {
     "message": "Dalamud 已成功更新！请查阅 Discord 来取得完整的更新日志。",
     "description": "ChatHandlers.PrintWelcomeMessage"
-  },
-  "DalamudPluginUpdateCheckFail": {
-    "message": "无法检查插件更新。",
-    "description": "<>c__DisplayClass23_0.<AutoUpdatePlugins>b__1"
-  },
-  "DalamudPluginAutoUpdate": {
-    "message": "自动更新：",
-    "description": "<>c__DisplayClass23_0.<AutoUpdatePlugins>b__1"
-  },
-  "NotificationUpdatedPlugins": {
-    "message": "{0} 个插件更新成功。",
-    "description": "<>c__DisplayClass23_0.<AutoUpdatePlugins>b__1"
-  },
-  "NotificationAutoUpdate": {
-    "message": "自动更新",
-    "description": "<>c__DisplayClass23_0.<AutoUpdatePlugins>b__1"
-  },
-  "DalamudPluginUpdateRequired": {
-    "message": "您需要更新一个或多个插件。请使用游戏中的 /xlplugins 命令来更新它们！",
-    "description": "<>c__DisplayClass23_0.<AutoUpdatePlugins>b__1"
   },
   "SystemMenuPlugins": {
     "message": "插件中心",
